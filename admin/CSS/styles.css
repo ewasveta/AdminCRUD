@@ -1,0 +1,38 @@
+*
+{
+    color:darkgreen;
+    font-size: 25px;
+    font-family: Verdana, Tahoma;
+    border: 0;
+}
+
+h1
+{
+    font-size: 40px;
+}
+
+#grid 
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 2px;
+    background-color: darkgreen;
+    padding: 2px;
+}
+  
+#grid > div 
+{
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.hdr
+{
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.6) !important;
+}
+#plus
+{
+    color:orange
+}

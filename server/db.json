@@ -1,0 +1,63 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "json-server",
+      "body": "automated typicode"
+    },
+    {
+      "userId": 3,
+      "title": "Denmark prince",
+      "body": "to be or not to be?",
+      "id": 2
+    },
+    {
+      "title": "server-client",
+      "body": "install gagi server, send some smagi to client",
+      "userId": 2,
+      "id": 3
+    },
+    {
+      "userId": 2,
+      "title": "limud hutz",
+      "body": "next lesson is today",
+      "id": 4
+    },
+    {
+      "title": "admin-message",
+      "body": "test message from admin",
+      "userId": 0,
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "name": "comment",
+      "body": "what can I do?",
+      "email": "gamlet@abc.biz",
+      "postId": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Sveta",
+      "surname": "Sokol",
+      "email": "svetaS@gm.com"
+    },
+    {
+      "id": 2,
+      "name": "Yuri",
+      "surname": "Vosk",
+      "email": "gagishmagiS@gsh.one"
+    },
+    {
+      "name": "Gamlet",
+      "surname": "Prince of Denmark",
+      "email": "gamlet@abc.biz",
+      "id": 3
+    }
+  ]
+}
