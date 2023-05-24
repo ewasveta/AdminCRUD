@@ -34,7 +34,6 @@ async function setup()
             `
             grid.innerHTML += div
         });
-
 }
 
 setup()
@@ -49,17 +48,15 @@ async function add()
 
     url = "http://localhost:3000/posts"
 
-    data = {
-        "title": "admin-message",
-        "body": msg,
-        "userId": 0 
-    }
+    data = {"title": "admin-message",
+            "body": msg,
+            "userId": 0 }
 
     // Post a new post
     const response = await fetch(url, 
         {
             method: "POST",
-            headers: {"Content-Type": "application/json",},
+            headers: {"Content-Type": "application/json"},
             body: JSON.stringify(data)
         })
 }
@@ -79,16 +76,14 @@ async function edit(postId)
 
     url = "http://localhost:3000/posts/" + postId
 
-    data = {
-        "title": thePost.title,
-        "body": current,
-        "userId": thePost.userId
-    }
+    data = {"title": thePost.title,
+            "body": current,
+            "userId": thePost.userId}
 
     const response = await fetch(url, 
         {
             method: "PUT",
-            headers: {"Content-Type": "application/json",},
+            headers: {"Content-Type": "application/json"},
             body: JSON.stringify(data)
          })
 }
@@ -97,11 +92,17 @@ async function del(postId)
 {
     console.log(`post Id is ${postId}`)
 
+
     url = "http://localhost:3000/posts/" + postId
 
-    const response = await fetch(url, 
-                {
-                    method: "DELETE",
-                    headers: {"Content-Type": "application/json",}
-                })
+    let text = "Are you sure you want to delete the post ?";
+    if (confirm(text)) 
+    {
+        const response = await fetch(url, 
+            {
+                method: "DELETE",
+                headers: {"Content-Type": "application/json"}
+            })
+    }
+
 }

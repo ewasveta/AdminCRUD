@@ -1,10 +1,10 @@
 {
   "posts": [
     {
-      "id": 1,
-      "userId": 1,
       "title": "json-server",
-      "body": "automated typicode"
+      "body": "automated typicode",
+      "userId": 1,
+      "id": 1
     },
     {
       "userId": 3,
@@ -26,7 +26,7 @@
     },
     {
       "title": "admin-message",
-      "body": "test message from admin",
+      "body": "admin message",
       "userId": 0,
       "id": 5
     }
