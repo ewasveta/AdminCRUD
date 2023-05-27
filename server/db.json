@@ -23,12 +23,6 @@
       "title": "limud hutz",
       "body": "next lesson is today",
       "id": 4
-    },
-    {
-      "title": "admin-message",
-      "body": "admin message",
-      "userId": 0,
-      "id": 5
     }
   ],
   "comments": [
@@ -58,6 +52,18 @@
       "surname": "Prince of Denmark",
       "email": "gamlet@abc.biz",
       "id": 3
+    },
+    {
+      "name": "Oleksy",
+      "surname": "Arestovich",
+      "email": "gur@gov.ua",
+      "id": 4
+    },
+    {
+      "name": "Kosta",
+      "surname": "Koroliov",
+      "email": "dba@dot.com",
+      "id": 5
     }
   ]
 }

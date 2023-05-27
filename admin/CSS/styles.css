@@ -2,13 +2,12 @@
 {
     color:darkgreen;
     font-size: 25px;
-    font-family: Verdana, Tahoma;
     border: 0;
 }
 
 h1
 {
-    font-size: 40px;
+    font-weight: bold;
 }
 
 #grid 
@@ -45,4 +44,11 @@ h1
 #plus
 {
     color:tomato;
+}
+
+input
+{
+    width: 32%;
+    font-size: 18px;
+    border: solid darkgreen 1px;
 }

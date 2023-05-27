@@ -92,7 +92,6 @@ async function del(postId)
 {
     console.log(`post Id is ${postId}`)
 
-
     url = "http://localhost:3000/posts/" + postId
 
     let text = "Are you sure you want to delete the post ?";
@@ -104,5 +103,4 @@ async function del(postId)
                 headers: {"Content-Type": "application/json"}
             })
     }
-
 }

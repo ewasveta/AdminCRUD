@@ -4,12 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="./CSS/styles.css" rel="stylesheet">
     <title>Blog Admin CRUD</title>
 </head>
 <body>
+
     <h1>USERS ADMIN PANEL</h1>
+
+    <button onclick="popup()">
+        <i id="plus" class="fa-solid fa-user-plus"></i>&nbsp;add user
+    </button>
+    <br><br>   
+
+    <div id="modal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-light-grey"> 
+                <span onclick="add()" 
+                    class="w3-button w3-display-topright">V
+                </span>               
+                <span onclick="hide()" 
+                    class="w3-button w3-display-bottomright">&times;
+                </span>
+                <h3>Please enter user data:</h3>
+            </header>
+            <div class="w3-container">
+                <input id="N" type="text" placeholder="Name">
+                <input id="S" type="text" placeholder="Surname">
+                <input id="E" type="text" placeholder="Email">
+            </div>
+            <div class="modal-footer w3-light-grey">
+                <h1>&nbsp;</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="eModal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-light-grey"> 
+                <span onclick="edit()" id="eSpan"
+                    class="w3-button w3-display-topright">V
+                </span>               
+                <span onclick="eHide()" 
+                    class="w3-button w3-display-bottomright">&times;
+                </span>
+                <h3>Please edit user data:</h3>
+            </header>
+            <div class="w3-container">
+                <input id="eN" type="text" placeholder="Name">
+                <input id="eS" type="text" placeholder="Surname">
+                <input id="eE" type="text" placeholder="Email">
+            </div>
+            <div class="modal-footer w3-light-grey">
+                <h1>&nbsp;</h1>
+            </div>
+        </div>
+    </div>   
 
     <div id="grid">
         <div class="hdr">ID</div>
@@ -19,7 +70,7 @@
         <div class="hdr">Actions</div>
 
     </div>
- 
+
     <script src="./JS/codeU.js" ></script>     
 </body>
 </html>
