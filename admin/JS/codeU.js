@@ -10,7 +10,7 @@ async function getUsers()
     } 
     catch (error) 
     {
-        console.log("Error fetching data",error)
+        console.error("Error fetching data ",error)
     }
 }
 async function setup()
@@ -126,8 +126,6 @@ async function edit()
 
     if(uName && uSurname && uEmail)
     {
-        console.log(`uEmail: ${uEmail}`);
-
         url = "http://localhost:3000/users/" + userId
 
         data = {"name": uName,
